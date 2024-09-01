@@ -1,0 +1,12 @@
+[package]
+name = "arima-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polars = { version = "0.42.0", features = ["lazy"] }
+anyhow = "1"
+thiserror = "1.0.63"
+ndarray = { version = "0.16.1", features = ["blas"] }
+num-traits = "0.2.19"
+bon = "2.1.0"
