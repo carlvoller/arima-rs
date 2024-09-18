@@ -1,0 +1,17 @@
+[package]
+name = "arimars-stationarity"
+resolver = "1"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+arimars-utils = { workspace = true }
+faer = "*"
+faer-ext = { git = "https://github.com/sarah-ek/faer-ext", features = [
+    "ndarray",
+] }
+ndarray = { version = "*", features = ["blas", "matrixmultiply-threading"] }
